@@ -1,0 +1,22 @@
+# golangci-lint configuration v2
+version: "2"
+
+run:
+  timeout: 5m
+  tests: false  # Don't run linters on test files
+
+linters:
+  enable:
+    - errcheck
+    - govet
+    - ineffassign
+    - staticcheck
+    - unused
+    - misspell
+    - unconvert
+    - gocritic
+
+formatters:
+  enable:
+    - gofmt
+    - goimports
